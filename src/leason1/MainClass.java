@@ -1,8 +1,8 @@
 package leason1;
 
 public class MainClass {
-    // 2. Создать переменные всех пройденных типов данных, и инициализировать их значения;
     public static void main (String[] args) {
+        // 2. Создать переменные всех пройденных типов данных, и инициализировать их значения;
 //        byte a = 127;
 //        short b = 12442;
 //        int c = 1000;
@@ -17,12 +17,14 @@ public class MainClass {
     // и возвращающий результат,где a, b, c, d – входные параметры этого метода;
     public static int calculate(int a,int b,int c, int d); {
             int f = a * b + (c / d);
+            return f;
     }
 // 4. Написать метод, принимающий на вход два числа, и проверяющий что их сумма лежит в пределах
 // от 10 до 20(включительно), если да – вернуть true, в противном случае – false;
     public static boolean task10and20(int x1, int x2) {
         boolean x3 = x1 + x2;
         if (x3 <= 10 || x3 >= 20) {
+            return x3;
             System.out.println("ok");
         }else{
     }
@@ -50,6 +52,7 @@ public static void greetings(String name) {
 }
 //*Написать метод, который определяет, является ли год високосным, и выводит сообщение в консоль. Каждый 4-й год
 // является високосным, кроме каждого 100-го, при этом каждый 400-й – високосный.
+
 }
 public static void leapYear (int year)
  if (!(year % 4 == 0) || ((year % 100 == 0) && !(year % 400 == 0))) System.out.println(year + " г. не високосный");
